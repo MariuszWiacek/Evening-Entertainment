@@ -1,15 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const Cocktail = () =>{
-  return (
- 
-      <p>
-          Cocktail section
-      </p>
-    
+const Cocktail = () => {
+  return <p>Cocktail section</p>;
+};
 
-
-  )
-}
-
-export default Cocktail
+export default Cocktail;
