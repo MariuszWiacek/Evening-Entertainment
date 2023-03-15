@@ -66,18 +66,10 @@ ul {
 
 .status {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 30px;
 }
 .game {
   display: flex;
   flex-direction: row;
 }
 
-.game-info {
-  margin-left: 20px;
-}
-.game-container{
-  position: relative;
-  left:80px;
-
-}
