@@ -50,7 +50,6 @@ function Cocktail() {
       <p className="cocktail-name">Cocktail: {cocktail}</p>
       <p className="cocktail-ingridients">Ingridients: {ingridients}</p>
       <p className="cocktail-instructions">Instructions: {instructions}</p>
-      <p></p>
     </div>
   );
 }

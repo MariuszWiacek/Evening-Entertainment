@@ -46,7 +46,7 @@
   margin: 15px;
   border: 2px dashed darkgreen;
   width: 300px;
-  height: 250px;
+  height: auto;
   padding: 5px;
   box-shadow: 5px white;
 }
