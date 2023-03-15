@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
+import './Cocktail.css'
+
 
 const requestURL = "https://api.api-ninjas.com/v1/cocktail?name=bloody mary";
 
@@ -12,26 +14,23 @@ const requestURLconfig = {
 let name, instructions;
 
 function Cocktail() {
+  const [cocktail, setCocktail] = useState("");
+  const [instructions, setInstructions] = useState("");
   axios.get(requestURL, requestURLconfig).then(function (response) {
     // handle success
     // console.log(response["data"][0]);
-    name = response["data"][0].name;
-    instructions = response["data"][0].instructions;
+    const name = response["data"][0].name;
+    const instr = response["data"][0].instructions;
     console.log(name);
-    console
-      .log(instructions)
-
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function () {
-        // always executed
-      });
+    console.log(instr)
+    setCocktail(name)
+    setInstructions(instr)
   });
   return (
     <div>
-      <p>Cocktail</p>
+      <p className="cocktail-name">Cocktail: {cocktail}</p>
+      <p className="cocktail-instructions">Instructions: {instructions}</p>
+      <p></p>
     </div>
   );
 }
