@@ -43,17 +43,26 @@
   display: flex;
 }
 .one-col {
-  margin: 15px;
-  border: 2px dashed darkgreen;
-  width: 300px;
-  height: auto;
-  padding: 5px;
-  box-shadow: 5px white;
+  font-family: 'Libre Baskerville', serif;
+  margin: 5%;
+  border: 20px;
+  text-align: center;
+  padding: 35px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: #2d313a;
 }
+
 
 .title {
   background-color: #364062;
   color: #a8afbd;
   font-family: 'Libre Baskerville', serif;
   font-size: 40px;
+}
+
+.card-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 200%;
+  color: red;
 }

@@ -30,8 +30,7 @@ function DadJoke() {
 
   return (
     <div>
-      <p>Joke of the day: </p>
-      <p className="jokes">{joke}</p>
+      <p>{joke}</p>
       
      
       <p></p>

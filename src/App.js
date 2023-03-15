@@ -14,18 +14,22 @@ function App() {
       <h2 className="title">Evening Entertainment!</h2>
         <div className="one-line">
           <div className="one-col">
+          <h1 className="card-title">Cocktail recipe:</h1>
             <Cocktail />
           </div>
           <div className="one-col">
+            <h1 className="card-title">Fact:</h1>
             <Fact />
           </div>
         </div>
 
         <div className="one-line">
           <div className="one-col">
+          <h1 className="card-title">Dad Joke:</h1>
             <DadJoke />
           </div>
           <div className="one-col">
+          <h1 className="card-title">GIF:</h1>
             <Giphy />
           </div>
         </div>
