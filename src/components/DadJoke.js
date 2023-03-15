@@ -2,11 +2,8 @@ import React from 'react';
 
 const DadJoke = () =>{
   return (
-
-      <p>
-      DadJoke section
-      </p>
-    
+    <div>DadJoke section</div>
+   
 
   )
 }
