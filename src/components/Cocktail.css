@@ -1,8 +1,13 @@
 .cocktail-name{
-  color: brown;
-  font-size: 26px;
+  color: #db5100;
+  font-size: 22px;
 }
 .cocktail-instructions {
-  font-size: 20px;
+  font-size: 16px;
+  color: #36a3f5;
+}
+.cocktail-ingridients {
+  font-size: 14px;
+  color: blanchedalmond;
 }
 
