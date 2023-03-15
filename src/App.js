@@ -3,6 +3,7 @@ import Cocktail from "./components/Cocktail";
 import DadJoke from "./components/DadJoke";
 import Fact from "./components/Fact";
 import Giphy from "./components/Giphy";
+import Game1 from "./components/Game1"
 import "bootstrap/dist/css/bootstrap.min.css";
 // import ReactDOM from "react-dom";
 
@@ -36,7 +37,7 @@ function App() {
 
         <div className="one-line">
           <div className="one-col">
-            <p>NPM MODULE/LIBRARY</p>
+            <Game1 />
           </div>
           <div className="one-col">
            <p>NPM MODULE/LIBRARY</p>

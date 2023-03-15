@@ -13,6 +13,7 @@ const arrayOfCocktails = [
   "Whiskey Sour",
   "Whiskey Smash",
   "Hurricane",
+  "Margarita"
 ];
 
 const randomCocktail =
