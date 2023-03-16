@@ -16,7 +16,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2 className="title">Evening Entertainment!</h2>
-<<<<<<< HEAD
         <div id="slider"><Sliderify >
 
           <div
@@ -61,32 +60,6 @@ function App() {
           <Email />
           </div>
 
-=======
-        <div id="slider">
-          <Sliderify>
-            <div>
-              <Giphy />
-            </div>
-            <div className="silly-billy">
-              <Game1 />
-            </div>
-            <div>
-              <Movie />
-            </div>
-            <div>
-              <Fact />
-            </div>
-            <div>
-              <DadJoke />
-            </div>
-            <div>
-              <Cocktail />
-            </div>
-            <div>
-              <Email />
-            </div>
-          </Sliderify>
->>>>>>> db2c32ef8c5b558240094e889151d0a222e1d0dc
         </div>
       </header>
     </div>
