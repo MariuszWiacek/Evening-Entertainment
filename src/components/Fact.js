@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './Fact.css'
 
 
 
@@ -48,9 +48,12 @@ const Fact = () => {
   }, []);
 
   return (
-    <p>
+    <div>
+    <p className='fact-title'>Fact of the day: </p>
+    <p className='fact-details'>
       {fact}
     </p>
+    </div>
   );
 }
 
