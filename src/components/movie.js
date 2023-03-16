@@ -11,9 +11,9 @@ const Movie = () => {
         const response = await axios.get('http://www.omdbapi.com/', {
           params: {
             apikey: 'b4e12eac',
-            s: 'a a a', 
+            s: 'a a a',
             type: 'movie',
-            y: '2023',
+          
           },
         });
         const { Search } = response.data;
@@ -47,7 +47,7 @@ const Movie = () => {
 
   return (
     <div>
-      <h1 style={{color: '#db5100' }}>Watch latest realesed movie : </h1>
+      <h1 style={{color: '#db5100' }}>Watch a movie : </h1>
       <h2 style={{color: 'red' }}>{movieData.Title}</h2>
       <p>{movieData.Plot}</p>
       <img src={movieData.Poster} alt={movieData.Title} />
