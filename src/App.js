@@ -20,7 +20,7 @@ function App() {
             <div>
               <Giphy />
             </div>
-            <div>
+            <div className="silly-billy">
               <Game1 />
             </div>
             <div>
