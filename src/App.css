@@ -73,3 +73,12 @@
   position: absolute;
   right: 40%;
 }
+#slider{
+  /* border: 10px dashed rgb(47, 158, 192); */
+  padding: 50px;
+  /* margin-left: 200px;
+  margin-right: 200px; */
+  width: 80%;
+  height: 80%;
+  
+}
