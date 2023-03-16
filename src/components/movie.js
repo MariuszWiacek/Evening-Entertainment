@@ -50,7 +50,7 @@ const Movie = () => {
       <h2 style={{color: "red"}}>What about a movie? </h2>
       <p style={{fontSize: "20px", color: "red"}}>{movieData.Title}</p>
       <p style={{fontSize: "20px"}}>{movieData.Plot}</p>
-      <img style={{maxHeight: "400px", maxWidth: "500px"}} src={movieData.Poster} alt={movieData.Title} />
+      <img style={{maxHeight: "300px", maxWidth: "300px"}} src={movieData.Poster} alt={movieData.Title} />
     </div>
   );
 };

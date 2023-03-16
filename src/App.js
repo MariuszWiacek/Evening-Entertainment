@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2 className="title">Evening Entertainment!</h2>
+        <p style={{fontSize:"20px" , color: "orange"}}>Place where you can find range of activities to enjoy your evening</p>
         <div id="slider"><Sliderify >
 
           <div
