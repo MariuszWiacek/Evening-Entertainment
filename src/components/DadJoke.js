@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import "./jokes.css";
+import "./DadJoke.css";
 
  
 
@@ -31,7 +31,8 @@ function DadJoke() {
 
   return (
     <div>
-      <p>{joke}</p>
+      <p className='joke-title'>Dad's joke fot the evening:</p>
+      <p className='joke-details'>{joke}</p>
       
      
       <p></p>
