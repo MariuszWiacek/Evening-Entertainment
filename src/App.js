@@ -5,6 +5,7 @@ import Fact from "./components/Fact";
 import Giphy from "./components/Giphy";
 import Game1 from "./components/Game1"
 import Movie from "./components/movie"
+import Email from "./Email";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Sliderify } from "react-sliderify";
 // import ReactDOM from "react-dom";
@@ -48,6 +49,12 @@ function App() {
           </div>
 
         </Sliderify >
+        </div>
+        <div className="one-line">
+          <div className="one-col">
+          <Email />
+          </div>
+
         </div>
       </header>
     </div>
