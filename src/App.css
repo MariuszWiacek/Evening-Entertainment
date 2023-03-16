@@ -62,6 +62,9 @@
 .title {
   font-family: 'Libre Baskerville', serif;
   font-size: 80px;
+  border-bottom: 14px dashed blue;
+  border-top: 14px dashed blue;
+  margin-top: 10px;
 }
 
 .card-title {
