@@ -18,7 +18,7 @@ function Giphy() {
 
   return (
     <div>
-      <p className="game-title">Funny Gif of the day</p>
+      <h2 style={{color: "red"}}>Funny Gif of the day</h2>
       <Card className="card-giphy" style={{ width: "25rem" }}>
         <Card.Img variant="top" src={gif} />
       </Card>

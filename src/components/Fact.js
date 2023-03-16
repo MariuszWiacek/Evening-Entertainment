@@ -49,7 +49,7 @@ const Fact = () => {
 
   return (
     <div>
-    <p className='fact-title'>Fact of the day: </p>
+    <h2 className='fact-title'>Fact of the day: </h2>
     <p className='fact-details'>
       {fact}
     </p>

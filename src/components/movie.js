@@ -47,10 +47,10 @@ const Movie = () => {
 
   return (
     <div>
-      <h1 style={{color: '#db5100' }}>Watch a movie : </h1>
-      <h2 style={{color: 'red' }}>{movieData.Title}</h2>
-      <p>{movieData.Plot}</p>
-      <img src={movieData.Poster} alt={movieData.Title} />
+      <h2 style={{color: "red"}}>What about a movie? </h2>
+      <p style={{fontSize: "20px", color: "red"}}>{movieData.Title}</p>
+      <p style={{fontSize: "20px"}}>{movieData.Plot}</p>
+      <img style={{maxHeight: "400px", maxWidth: "500px"}} src={movieData.Poster} alt={movieData.Title} />
     </div>
   );
 };

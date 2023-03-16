@@ -21,12 +21,12 @@ function Party() {
 
   return (
     <div>
-      <h2>Maybe party tonight? </h2>
+      <h2 style={{color: "red"}}>Maybe party tonight? </h2>
       <h2>{event.eventname}</h2>
       <p>{event.description}</p>
       <p>Venue : {event.venue.name}</p>
       <p>Date : {event.startdate}</p>
-      <p>Price : {event.entryprice} £</p>
+      <p>Price : {event.entryprice}</p>
     </div>
   );
 }
