@@ -4,6 +4,7 @@ import DadJoke from "./components/DadJoke";
 import Fact from "./components/Fact";
 import Giphy from "./components/Giphy";
 import Game1 from "./components/Game1"
+import Movie from "./components/movie"
 import "bootstrap/dist/css/bootstrap.min.css";
 // import ReactDOM from "react-dom";
 
@@ -40,7 +41,7 @@ function App() {
             <Game1 />
           </div>
           <div className="one-col">
-           <p>NPM MODULE/LIBRARY</p>
+           <Movie />
           </div>
         </div>
       </header>
