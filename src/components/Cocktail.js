@@ -47,7 +47,7 @@ function Cocktail() {
   }, []);
 
   return (
-    <div>
+    <div className="cocktail-parent">
       <p className="cocktail-name">Cocktail: {cocktail}</p>
       <p className="cocktail-ingridients">Ingridients: {ingridients}</p>
       <p className="cocktail-instructions">Instructions: {instructions}</p>
