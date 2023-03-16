@@ -8,6 +8,7 @@ import Movie from "./components/movie"
 import Email from "./Email";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Sliderify } from "react-sliderify";
+import Party from "./components/party";
 // import ReactDOM from "react-dom";
 
 function App() {
@@ -46,6 +47,11 @@ function App() {
 
           >
             <Cocktail />
+          </div>
+          <div
+
+          >
+            <Party />
           </div>
 
         </Sliderify >
