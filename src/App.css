@@ -17,6 +17,8 @@
 }
 
 .App-header {
+  background-image: url(https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg);
+  
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -43,22 +45,24 @@
   display: flex;
 }
 .one-col {
+  background-image: url(https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg);
   font-family: 'Libre Baskerville', serif;
   margin: 5%;
   border: 20px;
+  
   text-align: center;
-  padding: 35px;
-  border: 1px solid rgba(255, 255, 255, .25);
-  border-radius: 20px;
-  background-color: #2d313a;
+  padding: 25px;
+  border: 10px solid blue;
+  border-radius: 30px;
+  
 }
 
 
 .title {
-  background-color: #364062;
-  color: #a8afbd;
+ 
+  
   font-family: 'Libre Baskerville', serif;
-  font-size: 40px;
+  font-size: 80px;
 }
 
 .card-title {
