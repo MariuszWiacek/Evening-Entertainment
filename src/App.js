@@ -6,6 +6,7 @@ import Giphy from "./components/Giphy";
 import Game1 from "./components/Game1"
 import Movie from "./components/movie"
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Sliderify } from "react-sliderify";
 // import ReactDOM from "react-dom";
 
 function App() {
@@ -13,36 +14,40 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-      <h2 className="title">Evening Entertainment!</h2>
-        <div className="one-line">
-          <div className="one-col">
-          <h1 className="card-title">Cocktail recipe:</h1>
-            <Cocktail />
-          </div>
-          <div className="one-col">
-            <h1 className="card-title">Fact:</h1>
-            <Fact />
-          </div>
-        </div>
+        <h2 className="title">Evening Entertainment!</h2>
+        <div id="slider"><Sliderify >
 
-        <div className="one-line">
-          <div className="one-col">
-          <h1 className="card-title">Dad Joke:</h1>
-            <DadJoke />
-          </div>
-          <div className="one-col">
-          <h1 className="card-title">GIF:</h1>
+          <div
+
+          >
             <Giphy />
           </div>
-        </div>
+          <div
 
-        <div className="one-line">
-          <div className="one-col">
+          >
             <Game1 />
           </div>
-          <div className="one-col">
-           <Movie />
+          <div  >
+            <Movie />
+
           </div>
+          <div
+
+          >
+            <Fact />
+          </div>
+          <div
+
+          >
+            <DadJoke />
+          </div>
+          <div
+
+          >
+            <Cocktail />
+          </div>
+
+        </Sliderify >
         </div>
       </header>
     </div>
@@ -50,3 +55,6 @@ function App() {
 }
 
 export default App;
+
+
+
