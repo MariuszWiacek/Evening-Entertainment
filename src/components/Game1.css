@@ -47,15 +47,17 @@ ul {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 44px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 64px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 64px;
+  position: relative;
+  left: 10px;
 }
 
 .board-row:after {
@@ -75,4 +77,10 @@ ul {
 
 .game-container {
   min-width: 150px;
+}
+.credits {
+  font-size: 12px;
+  text-align: left;
+  color: blue;
+  background-color: #c1ce92;
 }
