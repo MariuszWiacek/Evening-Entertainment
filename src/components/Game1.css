@@ -23,7 +23,7 @@
 
 .status {
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 22px;
 }
 .game {
   display: flex;
@@ -38,4 +38,8 @@
   text-align: left;
   color: blue;
   background-color: #c1ce92;
+}
+.game-title{
+  color: red;
+  font-size: 36x;
 }

@@ -38,7 +38,7 @@ function Board({ xIsNext, squares, onPlay }) {
   return (
     <>
     <div className='game-container'>
-      
+      <p className='game-title'>Tic Tac Toe Game</p>
       <div className="status">{status}</div>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -62,8 +62,6 @@ function Board({ xIsNext, squares, onPlay }) {
     </>
   );
 }
-
-
 
 function Game1() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
