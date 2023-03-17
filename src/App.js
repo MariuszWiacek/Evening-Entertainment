@@ -42,15 +42,19 @@ function App() {
             <div>
               <Party />
             </div>
+           <div>
+           
+            <Email />
+            
+          </div>
+         
           </Sliderify>
         </div>
-        <div className="one-line">
-          <div className="one-col">
-            <Email />
-          </div>
-        </div>
+        
+       
       </header>
-    </div>
+      </div>
+   
   );
 }
 
