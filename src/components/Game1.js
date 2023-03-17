@@ -23,7 +23,7 @@ function Board({ xIsNext, squares, onPlay }) {
     }
     onPlay(nextSquares);
   }
-
+//text
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
