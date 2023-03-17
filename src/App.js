@@ -21,7 +21,7 @@ function App() {
       <div  className="title"><h1>Evening Entertainment!</h1>
   
   <p style={{ fontSize: "30px", color: "orange" }}>
-          Place where you can find range of activities to enjoy your evening
+          A place for all your evening entertainment
   </p>
   
 </div>
