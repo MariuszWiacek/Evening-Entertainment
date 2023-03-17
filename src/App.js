@@ -9,6 +9,7 @@ import Email from "./Email";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Sliderify } from "react-sliderify";
 import Party from "./components/party";
+import Video from "./components/video";
 // import ReactDOM from "react-dom";
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
           <Sliderify slideDurationInSecs="25">
             <div>
               <Giphy />
+            </div>
+            <div>
+              <Video />
             </div>
             <div>
               <Game1 />
