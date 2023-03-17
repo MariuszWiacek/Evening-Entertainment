@@ -50,7 +50,7 @@ function Cocktail() {
     <div className="cocktail-parent">
       <h2 style={{color:"red"}}>Time to drink</h2>
       <p className="cocktail-name">Cocktail: {cocktail}</p>
-      <p className="cocktail-ingridients">Ingridients: {ingridients}</p>
+      <p className="cocktail-ingridients">Ingredients: {ingridients}</p>
       <p className="cocktail-instructions">Instructions: {instructions}</p>
     </div>
   );

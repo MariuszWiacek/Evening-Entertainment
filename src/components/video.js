@@ -51,7 +51,7 @@ class RandomFunnyVideoCard extends Component {
 
     return (
       <div>
-        <h2>Some laugh with Funny Videos</h2>
+        <h2 style={{color: "red"}}>Have a laugh with a funny video</h2>
         {videoId && (
           <YouTube
             videoId={videoId}
