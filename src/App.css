@@ -54,7 +54,7 @@
 
   text-align: center;
   padding: 25px;
-  border: 10px solid blue;
+  border: 4px dashed blue;
   border-radius: 30px;
 
 }
@@ -63,13 +63,18 @@
   font-family: 'Libre Baskerville', serif;
   font-size: 80px;
   border-bottom: 10px dashed blue;
-  border-top: 10 dashed blue;
+  border-top: 2 dashed blue;
   margin-top: 10px;
 }
 
 .card-title {
   font-family: 'Libre Baskerville', serif;
   font-size: 200%;
+  color: red;
+}
+.card-title-feedback {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 100%;
   color: red;
 }
 .silly-billy{

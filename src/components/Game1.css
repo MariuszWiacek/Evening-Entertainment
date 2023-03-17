@@ -24,6 +24,8 @@
 .status {
   margin-bottom: 10px;
   font-size: 22px;
+  position: relative;
+  left: -25px;
 }
 .game {
   display: flex;
@@ -34,10 +36,11 @@
   min-width: 150px;
   margin: auto;
   position: absolute;
-  left:33%;
+  left:calc(50% - 110px); 
 }
+
 .credits {
-  font-size: 12px;
+  font-size: 22px;
   text-align: left;
   color: blue;
   background-color: #c1ce92;
@@ -45,4 +48,6 @@
 .game-title{
   color: red;
   font-size: 36x;
+  position: relative;
+  left: -25px;
 }

@@ -10,14 +10,14 @@ export default function Email() {
   };
   return (
     <>
-      <p>Send your feedback to developers</p>
+      <p className="card-title-feedback">Send your feedback to developers</p>
       <Editor
         apiKey="ktz0338w1bd1r04yq8sagnn0n60utu678c94ivynuztxy4q4"
         onInit={(evt, editor) => (editorRef.current = editor)}
-        initialValue="<p>This is my feedback on the app</p>"
+        initialValue="<p>This is my feedback on the app. Feedback is currently logged to console</p>"
         init={{
-          height: 300,
-          width: 600,
+          height: 200,
+          width: 500,
           menubar: false,
           plugins: [
             "advlist autolink lists link image charmap print preview anchor",
