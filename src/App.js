@@ -16,45 +16,33 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2 className="title">Evening Entertainment!</h2>
-        <p style={{fontSize:"20px" , color: "orange"}}>Place where you can find range of activities to enjoy your evening</p>
-        <div id="slider"><Sliderify >
-
-          <div
-
-          >
-            <Giphy />
-          </div>
-          <div
-
-          >
-            <Game1 />
-          </div>
-          <div  >
-            <Movie />
-
-          </div>
-          <div
-
-          >
-            <Fact />
-          </div>
-          <div
-
-          >
-            <DadJoke />
-          </div>
-          <div
-
-          >
-            <Cocktail />
-          </div>
-          <div
-
-          >
-            <Party />
-          </div>
-
-        </Sliderify >
+        <p style={{ fontSize: "20px", color: "orange" }}>
+          Place where you can find range of activities to enjoy your evening
+        </p>
+        <div id="slider">
+          <Sliderify slideDurationInSecs="25">
+            <div>
+              <Giphy />
+            </div>
+            <div>
+              <Game1 />
+            </div>
+            <div>
+              <Movie />
+            </div>
+            <div>
+              <Fact />
+            </div>
+            <div>
+              <DadJoke />
+            </div>
+            <div>
+              <Cocktail />
+            </div>
+            <div>
+              <Party />
+            </div>
+          </Sliderify>
         </div>
         <div className="one-line">
           <div className="one-col">
