@@ -2,15 +2,15 @@
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 44px;
+  font-size: 54px;
   font-weight: bold;
   line-height: 34px;
-  height: 64px;
+  height: 84px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 64px;
+  width: 84px;
   position: relative;
   left: 10px;
 }
@@ -25,7 +25,7 @@
   margin-bottom: 10px;
   font-size: 22px;
   position: relative;
-  left: -25px;
+  left: 10px;
 }
 .game {
   display: flex;
@@ -40,14 +40,15 @@
 }
 
 .credits {
-  font-size: 22px;
+  visibility: hidden;
+  font-size: 12px;
   text-align: left;
   color: blue;
-  background-color: #c1ce92;
+  /* background-color: #c1ce92; */
 }
 .game-title{
   color: red;
   font-size: 36x;
   position: relative;
-  left: -25px;
+  left: 5px;
 }

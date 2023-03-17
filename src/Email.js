@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Editor } from "@tinymce/tinymce-react";
 
+
 export default function Email() {
   const editorRef = useRef(null);
   const log = () => {
@@ -10,8 +11,11 @@ export default function Email() {
   };
   return (
     <>
+      <div className="align-center">
       <p className="card-title-feedback">Send your feedback to developers</p>
-      <Editor
+      </div>
+      <div className="align-center">
+      <Editor 
         apiKey="ktz0338w1bd1r04yq8sagnn0n60utu678c94ivynuztxy4q4"
         onInit={(evt, editor) => (editorRef.current = editor)}
         initialValue="<p>This is my feedback on the app. Feedback is currently logged to console</p>"
@@ -33,7 +37,12 @@ export default function Email() {
             "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
         }}
       />
+      </div>
+      <div className="align-center">
       <button onClick={log}>Send an email!</button>
-    </>
+      </div>
+      
+     </>
+    
   );
 }
