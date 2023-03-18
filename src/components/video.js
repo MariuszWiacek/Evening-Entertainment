@@ -17,21 +17,7 @@ const YouTubePlayer = () => {
     'AukduAXQ8rs',
     'vHRmgv7beEE',
     'dMH0bHeiRNg',
-  'oQwU7VgOic8',
-  'ibMvIV-_iMI',
-  'q5m6jd5JkS8',
-  'XeI7cCtJfvc',
-  'OT1jIw1F57Y',
-  '4cxL-1Awd5Y',
-  'ccZoHg8uV7g',
-  'M_aRcU0tW8A',
-  'xh9sGZVLdgs',
-  'WAsj8e0xZLw',
-  '3YVgkpW0rUc',
-  '5JGpC4RwJzw',
-  'n2B7EvoGGyQ',
-
-
+ 
   ];
   
 
