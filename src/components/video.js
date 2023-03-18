@@ -1,66 +1,79 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React,  { useState }   from 'react';
+import { useEffect } from 'react'
 import YouTube from 'react-youtube';
 
-class RandomFunnyVideoCard extends Component {
-  state = {
-    videoId: null,
-  };
+const YouTubePlayer = () => {
+  const [videoId, setVideoId] = useState('');
 
-  componentDidMount() {
-    this.getRandomVideo();
-  }
+  const funnyVideoIds = [
+    'dQw4w9WgXcQ',
+    'uLTIowBF0kE',
+    'G7RgN9ijwE4',
+    '-5sBc1nCJ4M',
+    'kKjGnZlJbtQ',
+    'sP4NMoJcFd4',
+    '8MvX9xJq7pM',
+    'cYlSvqwWoP4',
+    'k0GQSJrpVhM',
+    'xzsWR0qdjBs',
+    'Q5zckrKjZi0',
+    '1n5mdDTkX9M',
+    'DdAdEVzLXI8',
+    'aJP03d3pNYM',
+    'rlR4PJn8b8I',
+    'gCVMkKgs3u0',
+    '3qMhY2O6GkA',
+    'x6QZn9xiuOE',
+    'r5UxySAZNOc',
+    'Bjs1L_9LXNo'
+  ];
+  
 
-  getRandomVideo = async () => {
-    try {
-      const searchTerms = [
-        'funny',
-        'hilarious',
-        'comedy',
-        'laughs',
-        'jokes',
-        
-      ];
-
-      const randomSearchTerm =
-        searchTerms[Math.floor(Math.random() * searchTerms.length)];
-
-      const response = await axios.get(
-        'https://www.googleapis.com/youtube/v3/search', {
-          params: {
-            part: 'snippet',
-            q: randomSearchTerm,
-            type: 'video',
-            maxResults: 50,
-            key: 'AIzaSyBiCThRwC_-IiBlA1BEgLi8WQ4UT_OafJU',
-          },
-        }
-      );
-
-      const videos = response.data.items;
-      const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-
-      this.setState({ videoId: randomVideo.id.videoId });
-    } catch (error) {
-      console.error(error);
+  const opts = {
+    height: '415',
+    width: '660',
+    playerVars: {
+      autoplay: 0
     }
   };
 
-  render() {
-    const { videoId } = this.state;
+  const getRandomVideoId = () => {
+    const randomIndex = Math.floor(Math.random() * funnyVideoIds.length);
+    return funnyVideoIds[randomIndex];
+  };
 
-    return (
-      <div>
-        <h2 style={{color: "red"}}>Have a laugh with a funny video</h2>
-        {videoId && (
-          <YouTube
-            videoId={videoId}
-            opts={{ width: '640', height: '390' }}
-          />
-        )}
-      </div>
-    );
-  }
-}
+  const onPlayerError = (event) => {
+    // Play the next video if the current one is not available
+    setVideoId(getRandomVideoId());
+  };
 
-export default RandomFunnyVideoCard;
+  useState(() => {
+    setVideoId(getRandomVideoId());
+  }, []);
+
+  useEffect(() => {
+    const isMobile = window.matchMedia("(max-width: 468px)").matches;
+
+    if (isMobile) {
+      opts.height = '240';
+      opts.width = '360';
+    }
+  }, []);
+
+
+  return (
+    <div className='video'>
+            <h2>Have a laugh with a funny video </h2>
+
+      {videoId && <YouTube videoId={videoId} opts={opts} onError={onPlayerError} />}
+    </div>
+  );
+
+ 
+
+
+};
+
+export default YouTubePlayer;
+
+

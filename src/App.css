@@ -17,9 +17,7 @@
 
 .App-header {
   background-image: url(https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg);
-
-  background-color: #282c34;
-  min-height: 100vh;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,52 +70,57 @@
   font-size: 200%;
   color: red;
 }
+
 .card-title-feedback {
   font-family: 'Libre Baskerville', serif;
   font-size: 100%;
   color: red;
 }
-.silly-billy{
+
+.silly-billy {
   position: absolute;
   right: 40%;
 }
-#slider{
+
+#slider {
   /* border: 10px dashed rgb(47, 158, 192); */
   padding: 50px;
   /* margin-left: 200px;
   margin-right: 200px; */
   width: 80%;
   height: 80%;
-  
+
 }
-.align-center, button{
-margin-left: auto;
-margin-right: auto;
-display: flex;
-align-items: center;
-justify-content: center;
+
+.align-center,
+button {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 
 .navIcon.navIconNextBefore::before {
-    position:relative !important;
-    border-width: 80px !important;
-    border-top: 30px !important;
-    border-right: 20px !important;
-    border-image: url(./Images/nav-arrow.png)  !important;
-    z-index: 99999 !important;
+  position: relative !important;
+  border-width: 80px !important;
+  border-top: 30px !important;
+  border-right: 20px !important;
+  border-image: url(./Images/nav-arrow.png) !important;
+  z-index: 99999 !important;
 
-  
+
 }
 
 .navIcon.navIconPrevBefore::before {
-    border-width: 80px !important;
-    border-top: 30px !important;
-    border-right: 20px !important;
-    border-image: url(./Images/nav-arrow.png)  !important;
-    z-index: 99999 !important;
-    transform: scaleX(-1) !important;
-    border-image-outset: 20px !important;
-    
+  border-width: 80px !important;
+  border-top: 30px !important;
+  border-right: 20px !important;
+  border-image: url(./Images/nav-arrow.png) !important;
+  z-index: 99999 !important;
+  transform: scaleX(-1) !important;
+  border-image-outset: 20px !important;
+
 }

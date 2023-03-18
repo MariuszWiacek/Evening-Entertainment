@@ -43,6 +43,7 @@ const Fact = () => {
       });
       const data = await response.json();
       setFact(data[0].fact);
+      console.log(data)
     };
     fetchFact();
   }, []);

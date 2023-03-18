@@ -9,6 +9,7 @@ function Party() {
         `https://www.skiddle.com/api/v1/events/?api_key=a8b77d8d57a4883af23293c1d6f31725&latitude=51.5074&longitude=0.1278&radius=10&order=random`
       );
       const data = await response.json();
+      console.log(data.results)
       const randomEvent = data.results[Math.floor(Math.random() * data.results.length)];
       setEvent(randomEvent);
     };
@@ -21,12 +22,16 @@ function Party() {
 
   return (
     <div>
-      <h2 style={{color: "red"}}>Fancy a party tonight? </h2>
-      <h2>{event.eventname}</h2>
-      <p>{event.description}</p>
-      <p>Venue : {event.venue.name}</p>
-      <p>Date : {event.startdate}</p>
-      <p>Price : {event.entryprice}</p>
+      <h2>Fancy a party tonight? </h2>
+      
+      <img style={{float:"left", maxHeight: "400px", maxWidth: "400px", width: "50%", paddingRight:"2%"}} src={event.largeimageurl} />
+      <h2 style={{color: "orange"}}><strong>{event.eventname}</strong></h2>
+      <p><em>{event.description}</em></p>
+      <p>{event.date}</p>
+      <p>{event.venue.name}</p>
+      <p>{event.venue.town}</p>
+      <p>{event.venue.postcode}</p>
+      
     </div>
   );
 }

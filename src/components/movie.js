@@ -17,7 +17,6 @@ const Movie = () => {
           },
         });
         const { Search } = response.data;
-        console.log(response.data)
         if (Search && Search.length > 0) {
           const randomIndex = Math.floor(Math.random() * Search.length);
           const movieResponse = await axios.get('http://www.omdbapi.com/', {
@@ -47,10 +46,12 @@ const Movie = () => {
 
   return (
     <div>
-      <div><h2 style={{color: "red", alignItems: "top"}}>What about a movie? </h2></div>
-      <img style={{float:"left", maxHeight: "400px", maxWidth: "300px", width: "50%"}} src={movieData.Poster} alt={movieData.Title} />
-      <p style={{ fontSize: "40px", color: "orange"}}>{movieData.Title}</p>
-      <p style={{fontSize: "20px"}}>{movieData.Plot}</p>
+      <div><h2 style={{color: "red", alignItems: "top",paddingBottom:"2%"}}>What about a movie night? </h2></div>
+      <img style={{float:"left", maxHeight: "400px", maxWidth: "300px", width: "50%", paddingRight:"2%"}} src={movieData.Poster} alt={movieData.Title} />
+      <h2 style={{ color: "orange", textAlign:"center"}}><strong>{movieData.Title}</strong></h2>
+      <p style={{textAlign:"left"}}><em>{movieData.Plot}</em></p>
+      <p ><em>Rating : {movieData.imdbRating}</em></p>
+      <p ><em>Released : {movieData.Released}</em></p>
      
     </div>
   );

@@ -12,7 +12,7 @@ export default function Email() {
   return (
     <>
       <div className="align-center">
-      <p className="card-title-feedback">Send your feedback to developers</p>
+      <h2 className="card-title-feedback">Send your feedback to developers</h2>
       </div>
       <div className="align-center">
       <Editor 

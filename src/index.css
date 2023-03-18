@@ -13,9 +13,35 @@ code {
 }
 
 #slider {
-  
+  background-color: rgba(255, 255, 255, 0.055);
   height: "500px";
   width: 100%;
   height: max-content;
   align-items:center;
+  
+}
+
+h2 {
+  color: red;
+  padding-bottom: 3%;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+p {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: "300px",
+  }
+
 }

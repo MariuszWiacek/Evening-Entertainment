@@ -48,8 +48,8 @@ function Cocktail() {
 
   return (
     <div className="cocktail-parent">
-      <h2 style={{color:"red"}}>Time to drink</h2>
-      <p className="cocktail-name">Cocktail: {cocktail}</p>
+      <h2>Time to drink</h2>
+      <h2 className="cocktail-name"><strong>Cocktail: {cocktail}</strong></h2>
       <p className="cocktail-ingridients">Ingredients: {ingridients}</p>
       <p className="cocktail-instructions">Instructions: {instructions}</p>
     </div>
