@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Sliderify } from "react-sliderify";
 import Party from "./components/party";
 import Video from "./components/video";
+
 // import ReactDOM from "react-dom";
 
 
@@ -55,6 +56,7 @@ function App() {
             <div>
               <Party />
             </div>
+            
            <div>
            
             <Email />

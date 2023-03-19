@@ -35,7 +35,7 @@ const Fact = () => {
   const [fact, setFact] = useState('');
 
   useEffect(() => {
-    const fetchFact = async () => {
+    const fetchData = async () => {
       const response = await fetch('https://api.api-ninjas.com/v1/facts?limit=1', {
         headers: {
           'X-Api-Key': '+HjQRWo/G88Py6vuvVWDeA==Soa7hk2iKIwOlJnt'
@@ -45,7 +45,7 @@ const Fact = () => {
       setFact(data[0].fact);
       console.log(data)
     };
-    fetchFact();
+    fetchData();
   }, []);
 
   return (
