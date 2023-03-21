@@ -58,7 +58,7 @@ const Movie = () => {
           What about a movie night?
         </h2>
       </div>
-      <img
+      <img class="image1"
         style={{
           float: 'left',
           width: '350px',
