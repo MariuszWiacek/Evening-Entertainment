@@ -62,7 +62,7 @@ function Party() {
       <p>{event.date}</p>
       <p><em>{event.description}</em></p>
       <p>{event.venue.name}, {event.venue.town}, {event.venue.postcode}</p>
-      <button onClick={fetchRandomEvent}>Next</button>
+      <button style={{borderRadius: '8px'}} onClick={fetchRandomEvent}>Next</button>
     </div>
   );
 }

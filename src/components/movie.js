@@ -87,7 +87,7 @@ const Movie = () => {
       <p>
         <em>Released : {movieData.Released}</em>
       </p>
-      <button onClick={handleRefreshClick}>Next</button>
+      <button style={{borderRadius: '8px'}}onClick={handleRefreshClick}>Next</button>
     </div>
   );
 };
