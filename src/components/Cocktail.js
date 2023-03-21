@@ -38,7 +38,7 @@ function Cocktail() {
       const response = await axios(requestURL, requestURLconfig);
       const name = response["data"][0].name;
       const instr = response["data"][0].instructions;
-      const ingr = response["data"][0].ingredients;
+      const ingr = response["data"][0].ingredients.join(', ');
       setCocktail(name);
       setInstructions(instr);
       setingridients(ingr);
