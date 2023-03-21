@@ -51,7 +51,7 @@ This project is licensed under the [MIT] License - see the LICENSE.md file for d
 Just click on live website link below.
 
 ## LIVE WEBSITE
-[[https://MariuszWiacek.github.io/Project2](https://evening-entertaiment.netlify.app/)](https://evening-entertaiment.netlify.app/)
+[https://evening-entertaiment.netlify.app](https://evening-entertaiment.netlify.app/)
 
 
 Copyright © 2023. All rights are reserved.
