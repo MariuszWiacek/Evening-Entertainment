@@ -13,7 +13,8 @@ code {
 }
 
 #slider {
-  
+  animation: showTitle 3.5s ease-in-out forwards;
+  opacity: 0;
   height: "500px";
   width: 100%;
   height: max-content;

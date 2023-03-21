@@ -1,6 +1,8 @@
 .card-giphy {
   display: flex;
   margin: auto;
+  max-height: 400px;
+  
 }
 .game-title{
   color: red;

@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Sliderify } from "react-sliderify";
 import Party from "./components/party";
 import Video from "./components/video";
-
+// import Intro from "./components/intro";
 // import ReactDOM from "react-dom";
 
 
@@ -18,31 +18,30 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <div class="jumbotron">
-      <div  className="title"><h1 style={{ fontSize: "50px"}}>Evening Entertainment</h1>
-  
-  <p style={{ fontSize: "20px", color: "orange" }}>
-  A place for all your evening entertainment
-  </p>
-  
-</div>
-</div>
-     
-        
-        
+        <div class="jumbotron">
+          <div className="title"><h1 style={{ fontSize: "50px" }}>Evening Entertainment</h1>
+
+            <p style={{ fontSize: "20px", color: "orange" }}>
+              A place for all your evening entertainment
+            </p>
+
+          </div>
+        </div>
+
+
         <div id="slider">
           <Sliderify slideDurationInSecs="25">
             <div>
-              <Giphy />
+              <Party />
             </div>
             <div>
-              <Video />
+              <Movie />
             </div>
             <div>
               <Game1 />
             </div>
             <div>
-              <Movie />
+              <Video />
             </div>
             <div>
               <Fact />
@@ -54,22 +53,18 @@ function App() {
               <Cocktail />
             </div>
             <div>
-              <Party />
+              <Giphy />
             </div>
-            
-           <div>
-           
-            <Email />
-            
-          </div>
-         
+            <div>
+              <Email />
+            </div>
           </Sliderify>
         </div>
-        
-       
+
+
       </header>
-      </div>
-   
+    </div>
+
   );
 }
 

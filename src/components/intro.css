@@ -1,0 +1,73 @@
+
+body{
+  background-image: url(https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg);
+  background-size: cover;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  
+}
+
+
+
+
+
+
+
+.intro-container {
+  height: 50vh; /*centering*/
+  /*centering*/
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+}
+
+.typing {
+  width: 100ch;
+  animation: typing 6.5s steps(32), blink .2s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+ 
+  
+  
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@keyframes showTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.small { display: none; }
+
+
+
+
+@media (max-width: 600px) {
+  body {
+    background-size:auto;
+    
+  }
+  .small { display: inline-block; }
+  .big { display: none; }
+  
+}
