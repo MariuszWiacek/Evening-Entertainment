@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 const Movie = () => {
   const [movieData, setMovieData] = useState(null);
   const [error, setError] = useState(null);
@@ -52,44 +53,42 @@ const Movie = () => {
   };
 
   return (
-    <div>
-      <div>
-        <h2 style={{ color: 'red', alignItems: 'top', paddingBottom: '2%' }}>
-          What about a movie night?
-        </h2>
-      </div>
-      <img class="image1"
+    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+      <img
+        className="image1"
         style={{
-          float: 'left',
           width: '330px',
           height: '480px',
           paddingRight: '2%',
           transition: 'transform 1s',
           cursor: 'pointer',
-          marginLeft: '10%',
         }}
         src={`https://image.tmdb.org/t/p/w500/${movieData.poster_path}`}
         alt={movieData.title}
         onMouseOver={(e) => {
-          e.currentTarget.style.transform = 'scale(1.1)'; /* add transform on hover */
+          e.currentTarget.style.transform = 'scale(1.1)';
         }}
         onMouseOut={(e) => {
-          e.currentTarget.style.transform = 'scale(1)'; /* reset transform on mouse out */
+          e.currentTarget.style.transform = 'scale(1)';
         }}
       />
-      <h2 style={{ color: 'orange', textAlign: 'center', padding:'0px' }}>
-        <strong>{movieData.title}</strong>
-      </h2>
-      <p style={{ fontSize: '20px', textAlign: 'left' }}>
-        <em>{movieData.overview}</em>
-      </p>
-      <p style={{ fontSize: '20px', textAlign: 'left' }}>
-        <em>Rating : {movieData.vote_average}</em>
-      </p>
-      <p style={{ fontSize: '20px', textAlign: 'left' }}>
-        <em>Released : {movieData.release_date}</em>
-      </p>
-      <button onClick={handleRefreshClick}>Next</button>
+      <div style={{ width: '50%' }}>
+        <h2 style={{ color: 'orange', textAlign: 'center', padding: '0px' }}>
+          <strong>{movieData.title}</strong>
+        </h2>
+        <p style={{ fontSize: '20px', textAlign: 'left' }}>
+          <em>{movieData.overview}</em>
+        </p>
+        <p style={{ fontSize: '20px', textAlign: 'left' }}>
+          <em>Rating : {movieData.vote_average}</em>
+        </p>
+        <p style={{ fontSize: '20px', textAlign: 'left' }}>
+          <em>Released : {movieData.release_date}</em>
+        </p>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <button onClick={handleRefreshClick}>Next</button>
+        </div>
+      </div>
     </div>
   );
 };
