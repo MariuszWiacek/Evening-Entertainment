@@ -61,8 +61,8 @@ const Movie = () => {
       <img class="image1"
         style={{
           float: 'left',
-          width: '350px',
-          height: '400px',
+          width: '330px',
+          height: '480px',
           paddingRight: '2%',
           transition: 'transform 1s',
           cursor: 'pointer',
@@ -77,16 +77,16 @@ const Movie = () => {
           e.currentTarget.style.transform = 'scale(1)'; /* reset transform on mouse out */
         }}
       />
-      <h2 style={{ color: 'orange', textAlign: 'center' }}>
+      <h2 style={{ color: 'orange', textAlign: 'center', padding:'0px' }}>
         <strong>{movieData.title}</strong>
       </h2>
-      <p style={{ textAlign: 'left' }}>
+      <p style={{ fontSize: '20px', textAlign: 'left' }}>
         <em>{movieData.overview}</em>
       </p>
-      <p>
+      <p style={{ fontSize: '20px', textAlign: 'left' }}>
         <em>Rating : {movieData.vote_average}</em>
       </p>
-      <p>
+      <p style={{ fontSize: '20px', textAlign: 'left' }}>
         <em>Released : {movieData.release_date}</em>
       </p>
       <button onClick={handleRefreshClick}>Next</button>
