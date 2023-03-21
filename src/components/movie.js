@@ -1,27 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-
 const Movie = () => {
   const [movieData, setMovieData] = useState(null);
   const [error, setError] = useState(null);
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://www.omdbapi.com/', {
+      const response = await axios.get('https://api.themoviedb.org/3/discover/movie', {
         params: {
-          apikey: 'b4e12eac',
-          s: 'a a a',
-          type: 'movie',
+          api_key: '8ee992b90b940495186ee6aeb86fb4a8',
+          language: 'en-US',
+          sort_by: 'popularity.desc',
+          include_adult: false,
+          include_video: false,
+          page: Math.floor(Math.random() * 50) + 1, // Get a random page
         },
       });
-      const { Search } = response.data;
-      if (Search && Search.length > 0) {
-        const randomIndex = Math.floor(Math.random() * Search.length);
-        const movieResponse = await axios.get('http://www.omdbapi.com/', {
+      const { results } = response.data;
+      if (results && results.length > 0) {
+        const randomIndex = Math.floor(Math.random() * results.length);
+        const movieResponse = await axios.get(`https://api.themoviedb.org/3/movie/${results[randomIndex].id}`, {
           params: {
-            apikey: 'b4e12eac',
-            i: Search[randomIndex].imdbID,
+            api_key: '8ee992b90b940495186ee6aeb86fb4a8',
+            language: 'en-US',
           },
         });
         setMovieData(movieResponse.data);
@@ -44,15 +46,16 @@ const Movie = () => {
   if (!movieData) {
     return <div>Loading...</div>;
   }
+
   const handleRefreshClick = () => {
     fetchData();
   };
+
   return (
     <div>
       <div>
         <h2 style={{ color: 'red', alignItems: 'top', paddingBottom: '2%' }}>
           What about a movie night?
-
         </h2>
       </div>
       <img
@@ -64,10 +67,9 @@ const Movie = () => {
           transition: 'transform 1s',
           cursor: 'pointer',
           marginLeft: '10%',
-
         }}
-        src={movieData.Poster}
-        alt={movieData.Title}
+        src={`https://image.tmdb.org/t/p/w500/${movieData.poster_path}`}
+        alt={movieData.title}
         onMouseOver={(e) => {
           e.currentTarget.style.transform = 'scale(1.1)'; /* add transform on hover */
         }}
@@ -76,20 +78,20 @@ const Movie = () => {
         }}
       />
       <h2 style={{ color: 'orange', textAlign: 'center' }}>
-        <strong>{movieData.Title}</strong>
+        <strong>{movieData.title}</strong>
       </h2>
       <p style={{ textAlign: 'left' }}>
-        <em>{movieData.Plot}</em>
+        <em>{movieData.overview}</em>
       </p>
       <p>
-        <em>Rating : {movieData.imdbRating}</em>
+        <em>Rating : {movieData.vote_average}</em>
       </p>
       <p>
-        <em>Released : {movieData.Released}</em>
+        <em>Released : {movieData.release_date}</em>
       </p>
-      <button style={{borderRadius: '8px'}}onClick={handleRefreshClick}>Next</button>
+      <button onClick={handleRefreshClick}>Next</button>
     </div>
   );
 };
 
-export default Movie;
+export default Movie
