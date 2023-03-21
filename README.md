@@ -18,6 +18,11 @@ Evening entertaiment
 
 HTML / CSS / JavaScript / REACT / node.js
 
+### NPM Library/Modules Used:
+
+1. TicTacToe Game Module
+2. Rich text editor tinymce/tinymce-react
+
 ### 3rd Party APIs used in deployed application:
 
 1. ODMB API: https://developer.nps.gov/api/v1/
