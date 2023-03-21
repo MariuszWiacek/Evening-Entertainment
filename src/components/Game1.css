@@ -13,6 +13,7 @@
   width: 84px;
   position: relative;
   left: 10px;
+  color: black;
 }
 
 .board-row:after {

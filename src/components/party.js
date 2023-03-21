@@ -35,7 +35,7 @@ function Party() {
   return (
     <div>
       <h2>Fancy a party in London ? </h2>
-      <img 
+      <img class="image1"
       style={{ 
         
           float: 'left',

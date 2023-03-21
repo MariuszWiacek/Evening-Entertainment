@@ -52,11 +52,6 @@ function Board({ xIsNext, squares, onPlay }) {
           <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
           <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
         </div>
-        <br></br>
-        <p className="credits">
-          Code taken from:{" "}
-          <a target="_blank" href="https://beta.reactjs.org/learn/tutorial-tic-tac-toe">Link</a>
-        </p>
       </div>
     </>
   );

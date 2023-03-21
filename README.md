@@ -18,6 +18,11 @@ Evening entertaiment
 
 HTML / CSS / JavaScript / REACT / node.js
 
+### NPM Library/Modules Used:
+
+1. TicTacToe Game Module
+2. Rich text editor tinymce/tinymce-react
+
 ### 3rd Party APIs used in deployed application:
 
 1. ODMB API: https://developer.nps.gov/api/v1/
@@ -46,7 +51,7 @@ This project is licensed under the [MIT] License - see the LICENSE.md file for d
 Just click on live website link below.
 
 ## LIVE WEBSITE
-https://MariuszWiacek.github.io/Project2
+[https://evening-entertaiment.netlify.app](https://evening-entertaiment.netlify.app/)
 
 
 Copyright © 2023. All rights are reserved.
