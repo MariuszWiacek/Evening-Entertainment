@@ -1,5 +1,5 @@
-import React,  { useState }   from 'react';
-import { useEffect } from 'react'
+import React, { useState, useMemo } from 'react';
+import { useEffect } from 'react';
 import YouTube from 'react-youtube';
 
 const YouTubePlayer = () => {
@@ -17,17 +17,15 @@ const YouTubePlayer = () => {
     'AukduAXQ8rs',
     'vHRmgv7beEE',
     'dMH0bHeiRNg',
- 
   ];
-  
 
-  const opts = {
+  const opts = useMemo(() => ({
     height: '415',
     width: '660',
     playerVars: {
-      autoplay: 0
-    }
-  };
+      autoplay: 0,
+    },
+  }), []);
 
   const getRandomVideoId = () => {
     const randomIndex = Math.floor(Math.random() * funnyVideoIds.length);
@@ -44,28 +42,20 @@ const YouTubePlayer = () => {
   }, []);
 
   useEffect(() => {
-    const isMobile = window.matchMedia("(max-width: 468px)").matches;
+    const isMobile = window.matchMedia('(max-width: 468px)').matches;
 
     if (isMobile) {
       opts.height = '240';
       opts.width = '360';
     }
-  }, []);
-
+  }, [opts]);
 
   return (
-    <div className='video'>
-            <h2>Have a laugh with a funny video </h2>
-
+    <div className="video">
+      <h2>Have a laugh with a funny video</h2>
       {videoId && <YouTube videoId={videoId} opts={opts} onError={onPlayerError} />}
     </div>
   );
-
- 
-
-
 };
 
 export default YouTubePlayer;
-
-
