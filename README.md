@@ -22,6 +22,8 @@ HTML / CSS / JavaScript / REACT / node.js
 
 1. TicTacToe Game Module
 2. Rich text editor tinymce/tinymce-react
+3. Sliderfy - NPM module for slide show
+4. NPM ReactYoutube Module to integrate video player
 
 ### 3rd Party APIs used in deployed application:
 
