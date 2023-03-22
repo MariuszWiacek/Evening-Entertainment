@@ -64,7 +64,7 @@ body{
 
 @media (max-width: 600px) {
   body {
-    background-size:auto;
+    background-size:cover;
     
   }
   .small { display: inline-block; }

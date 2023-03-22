@@ -10,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Sliderify } from "react-sliderify";
 import Party from "./components/party";
 import Video from "./components/video";
+import Cinema from "./components/cinema"
+
 // import Intro from "./components/intro";
 // import ReactDOM from "react-dom";
 
@@ -30,7 +32,10 @@ function App() {
 
 
         <div id="slider">
-          <Sliderify slideDurationInSecs="25">
+          <Sliderify slideDurationInSecs="250">
+          <div>
+              <Cinema />
+            </div>
             <div>
               <Party />
             </div>

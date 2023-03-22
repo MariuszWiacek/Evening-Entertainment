@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Movie = () => {
+const Cinema = () => {
   const [movieData, setMovieData] = useState(null);
   const [error, setError] = useState(null);
 
@@ -50,7 +50,7 @@ const Movie = () => {
 
   return (
     <div>
-      <h2>What's in cinemas?</h2>
+      <h2>What is currently in cinemas?</h2>
       <div class="moviediv" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
         <img
           className="image1"
@@ -92,4 +92,4 @@ const Movie = () => {
   );
 };
 
-export default Movie;
+export default Cinema;
