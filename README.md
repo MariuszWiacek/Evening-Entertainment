@@ -12,7 +12,7 @@
 
 ## DESCRIPTION
 
-Evening entertaiment for a user who needs some free time back from work, relaxing and finding ideas to spend the night in the best ways.
+Evening entertaiment for a user who needs some free time back from work, relaxing and finding ideas to spend the night in the best ways. This app gives you everything you need every day and onclick you can manage your evening...
 
 
 ## TECHNOLOGIES USED
