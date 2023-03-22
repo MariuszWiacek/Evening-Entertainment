@@ -33,10 +33,14 @@ HTML / CSS / JavaScript / REACT / node.js
 3. SKIDDLE API https://www.skiddle.com/api/
 4. GIPHY API https://developers.giphy.com/
 
+## EXECUTING PROGRAM
+
+Just click on live website link below and scroll through the page by the arrows to see the magic ...
+
 
 ## Screenshot
 
-![screenshot](images/screenshot.png)
+![screenshot](./src/Images/funnygif.png)
 
 
 ## COLLABORATORS
@@ -50,9 +54,7 @@ HTML / CSS / JavaScript / REACT / node.js
 
 This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE.md file for details
 
-## EXECUTING PROGRAM
 
-Just click on live website link below and scroll through the page to see the magic ...
 
 ## LIVE WEBSITE
 [https://evening-entertaiment.netlify.app](https://evening-entertaiment.netlify.app/)
