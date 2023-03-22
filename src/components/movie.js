@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 const Movie = () => {
   const [movieData, setMovieData] = useState(null);
   const [error, setError] = useState(null);
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://api.themoviedb.org/3/movie/now_playing', {
+      const response = await axios.get('https://api.themoviedb.org/3/discover/movie', {
         params: {
           api_key: '8ee992b90b940495186ee6aeb86fb4a8',
           language: 'en-US',
-          page: Math.floor(Math.random() * 20) + 1, // Get a random page
+          sort_by: 'popularity.desc',
+          include_adult: false,
+          include_video: false,
+          page: Math.floor(Math.random() * 50) + 1, // Get a random page
         },
       });
       const { results } = response.data;
@@ -21,6 +25,7 @@ const Movie = () => {
           params: {
             api_key: '8ee992b90b940495186ee6aeb86fb4a8',
             language: 'en-US',
+            genre : 'comedy',
           },
         });
         setMovieData(movieResponse.data);
@@ -46,11 +51,11 @@ const Movie = () => {
 
   const handleRefreshClick = () => {
     fetchData();
-  };
+  }
 
   return (
     <div>
-      <h2>What's in cinemas?</h2>
+      <h2>What about a movie?</h2>
       <div class="moviediv" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
         <img
           className="image1"
@@ -90,6 +95,5 @@ const Movie = () => {
       </div>
     </div>
   );
-};
-
-export default Movie;
+        }
+  export default Movie
