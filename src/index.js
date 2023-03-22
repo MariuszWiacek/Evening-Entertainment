@@ -14,12 +14,12 @@ class Main extends React.Component {
   }
 
   componentDidMount() {
-    // Simulate an API call or any other async operation
+    
     setTimeout(() => {
       this.setState({
         isLoading: false
       });
-    }, 10000); // Set loading to false after 2 seconds
+    }, 10000); // Set loading to false after 10 seconds
   }
 
   render() {

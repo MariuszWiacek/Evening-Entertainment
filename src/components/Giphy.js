@@ -10,7 +10,7 @@ function Giphy() {
     const fetchData = async () => {
       const apiKey = "qADA9abLaJMnGncJT3lX9IjzFmm3YVk8";
       const url = "https://api.giphy.com/v1/gifs/";
-      const result = await axios(`${url}random?api_key=${apiKey}`);
+      const result = await axios(`${url}random?api_key=${apiKey}&tag=funny`);
       setGif(`${result.data.data.images.fixed_height.url}`);
     };
     fetchData();
@@ -18,7 +18,7 @@ function Giphy() {
 
   return (
     <div>
-      <h2 style={{color: "red"}}>Funny Gif of the day</h2>
+      <h2>Funny Gif of the day</h2>
       <Card className="card-giphy" style={{ width: "25rem" }}>
         <Card.Img variant="top" src={gif} />
       </Card>

@@ -52,7 +52,7 @@ const YouTubePlayer = () => {
 
   return (
     <div className="video">
-      <h2>Have a laugh with a funny video</h2>
+      <strong><h2>Have a laugh with a funny video</h2></strong>
       {videoId && <YouTube videoId={videoId} opts={opts} onError={onPlayerError} />}
     </div>
   );

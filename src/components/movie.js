@@ -50,47 +50,49 @@ const Movie = () => {
 
   const handleRefreshClick = () => {
     fetchData();
-  };
+  }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-      <img
-        className="image1"
-        style={{
-          width: '330px',
-          height: '480px',
-          paddingRight: '2%',
-          transition: 'transform 1s',
-          cursor: 'pointer',
-        }}
-        src={`https://image.tmdb.org/t/p/w500/${movieData.poster_path}`}
-        alt={movieData.title}
-        onMouseOver={(e) => {
-          e.currentTarget.style.transform = 'scale(1.1)';
-        }}
-        onMouseOut={(e) => {
-          e.currentTarget.style.transform = 'scale(1)';
-        }}
-      />
-      <div style={{ width: '50%' }}>
-        <h2 style={{ color: 'orange', textAlign: 'center', padding: '0px' }}>
-          <strong>{movieData.title}</strong>
-        </h2>
-        <p style={{ fontSize: '20px', textAlign: 'left' }}>
-          <em>{movieData.overview}</em>
-        </p>
-        <p style={{ fontSize: '20px', textAlign: 'left' }}>
-          <em>Rating : {movieData.vote_average}</em>
-        </p>
-        <p style={{ fontSize: '20px', textAlign: 'left' }}>
-          <em>Released : {movieData.release_date}</em>
-        </p>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <button onClick={handleRefreshClick}>Next</button>
+    <div>
+      <h2>What about a movie?</h2>
+      <div class="moviediv" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+        <img
+          className="image1"
+          style={{
+            width: '330px',
+            height: '480px',
+            paddingRight: '2%',
+            transition: 'transform 1s',
+            cursor: 'pointer',
+          }}
+          src={`https://image.tmdb.org/t/p/w500/${movieData.poster_path}`}
+          alt={movieData.title}
+          onMouseOver={(e) => {
+            e.currentTarget.style.transform = 'scale(1.1)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+        />
+        <div class="movieDescription">
+          <h2 style={{ color: 'orange', textAlign: 'center', padding: '0px' }}>
+            <strong>{movieData.title}</strong>
+          </h2>
+          <p style={{ fontSize: '20px', textAlign: 'left' }}>
+            <em>{movieData.overview}</em>
+          </p>
+          <p style={{ fontSize: '20px', textAlign: 'left' }}>
+            <em>Rating : {movieData.vote_average}</em>
+          </p>
+          <p style={{ fontSize: '20px', textAlign: 'left' }}>
+            <em>Released : {movieData.release_date}</em>
+          </p>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <button onClick={handleRefreshClick}>Next</button>
+          </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default Movie
+        }
+  export default Movie

@@ -18,15 +18,17 @@ code {
   height: "500px";
   width: 100%;
   height: max-content;
-  align-items:center;
-  
-  
+  align-items: center;
+
+
 }
 
 
-h2  {
-  color: red;
+h2 {
+  color: rgb(0, 174, 255);
   padding-bottom: 3%;
+  text-decoration: wavy;
+  
 }
 
 h1 {
@@ -38,7 +40,7 @@ p {
 }
 
 .ref-button {
-  background-color:rgba(255, 252, 252, 0.568);
+  background-color: rgba(255, 252, 252, 0.568);
   border-radius: 10%;
   border-color: rgb(255, 255, 255);
 
@@ -50,23 +52,61 @@ button {
 
 }
 
- 
+
 
 
 @media only screen and (max-width: 600px) {
-  
-iframe{
+
+  iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     max-height: "300px";
-    
+    padding: 0%;
+    margin: 0%;
+
   }
- 
-  .image1
-    { display: none; }
+
   
+
+  #slider {
+    width: 100% !important;
+    margin: 0% !important;
+    padding: 0% !important;
+    height: 500px !important;
+  }
+
+  .image1 {
+    display: none;
+  }
+
  
+  .movieDescription {
+    font-size: 30px !important;
+    padding: 10px;
+  }
+
+  .navIcon.navIconNextBefore::before {
+    position: relative !important;
+    border-width: 40px !important;
+    border-top: 15px !important;
+    border-right: 10px !important;
+    border-image: url(./Images/nav-arrow.png) !important;
+    z-index: 99999 !important;
+  
+  
+  }
+  
+  .navIcon.navIconPrevBefore::before {
+    border-width: 20px !important;
+    border-top: 10px !important;
+    border-right: 10px !important;
+    border-image: url(./Images/nav-arrow.png) !important;
+    z-index: 99999 !important;
+    transform: scaleX(-1) !important;
+    border-image-outset: 10px !important;
+  
+  }
 
 }
