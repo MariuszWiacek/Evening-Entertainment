@@ -17,7 +17,7 @@ const Intro = () => {
         <div className="intro-container">
             <div className="typing">
                 <span class="big" style={{fontSize: "50px", color: 'orange'}}> Welcome to Evening Entertainment  </span>
-                <span class="small" style={{fontSize: "20px", color: 'orange'}}> Welcome to Evening Entertainment </span>
+                <span class="small" style={{fontSize: "15px", color: 'orange'}}> Welcome to Evening Entertainment </span>
 
             </div>
 
