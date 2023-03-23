@@ -42,10 +42,13 @@ const MealDB = () => {
         <img
           className="image1"
           style={{
+            border: '2px solid #ccc',
+            borderRadius: '10px',
+            boxShadow: '0 0 10px #ccc',
             width: '430px',
             height: '430px',
-            paddingRight: '2%',
-            paddingLeft : '2px',
+            marginRight: '2%',
+            marginLeft : '2%',
             transition: 'transform 1s',
             cursor: 'pointer',
           }}

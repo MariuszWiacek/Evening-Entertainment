@@ -21,7 +21,7 @@ const Fact = () => {
         setFact(fact);
       } catch (error) {
         console.error("Error fetching fact:", error);
-        if (attempts < 5) { // maximum number of attempts is 5
+        if (attempts < 5) {
           setAttempts(attempts + 1);
           fetchData();
         } else {
@@ -36,7 +36,7 @@ const Fact = () => {
   return (
     <div>
       <h2 className='fact-title'>Fact of the day: </h2>
-      <p style={{paddingTop: "5%"}} className='fact-details'>
+      <p style={{ paddingTop: "5%" }} className='fact-details'>
         {fact}
       </p>
     </div>

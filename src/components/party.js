@@ -36,26 +36,26 @@ function Party() {
     <div>
       <h2>Fancy a party in London ? </h2>
       <img class="image1"
-      style={{ 
-        
+        style={{
+          border: '2px solid #ccc', 
+          borderRadius: '10px', 
+          boxShadow: '0 0 10px #ccc', 
           float: 'left',
           width: '350px',
           height: '400px',
-          paddingRight: '2%',
+          marginRight: '2%',
+          marginLeft: '2%',
           transition: 'transform 1s',
-          cursor: 'pointer', 
-          marginLeft: '10%'
-          
-        
-       }} 
-       onMouseOver={(e) => {
-        e.currentTarget.style.transform = 'scale(1.1)'; /* add transform on hover */
-      }}
-      onMouseOut={(e) => {
-        e.currentTarget.style.transform = 'scale(1)'; /* reset transform on mouse out */
-      }}
-      
-       src={event.largeimageurl} alt={event.eventname} />
+          cursor: 'pointer',
+        }}
+        onMouseOver={(e) => {
+          e.currentTarget.style.transform = 'scale(1.1)'; /* add transform on hover */
+        }}
+        onMouseOut={(e) => {
+          e.currentTarget.style.transform = 'scale(1)'; /* reset transform on mouse out */
+        }}
+
+        src={event.largeimageurl} alt={event.eventname} />
 
 
       <h2 style={{ color: 'orange' }}><strong>{event.eventname}</strong></h2>
@@ -63,8 +63,8 @@ function Party() {
       <p><em>{event.description}</em></p>
       <p>{event.venue.name}, {event.venue.town}, {event.venue.postcode}</p>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <button onClick={fetchRandomEvent}>Next</button>
-          </div>
+        <button onClick={fetchRandomEvent}>Next</button>
+      </div>
     </div>
   );
 }

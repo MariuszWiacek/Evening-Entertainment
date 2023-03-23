@@ -60,10 +60,13 @@ const Movie = () => {
         <img
           className="image1"
           style={{
+            border: '2px solid #ccc', // set border style, width and color
+            borderRadius: '10px', // round the corners of the border
+            boxShadow: '0 0 10px #ccc', // add a shadow to the border
             width: '330px',
             height: '480px',
-            paddingRight: '2%',
-            paddingLeft : '2px',
+            marginRight: '2%',
+            marginLeft : '2%',
             transition: 'transform 1s',
             cursor: 'pointer',
           }}

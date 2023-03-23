@@ -37,7 +37,13 @@ function App() {
               <Party />
             </div>
             <div>
+              <Fact />
+            </div>
+            <div>
               <Cook />
+            </div>
+            <div>
+              <Cocktail />
             </div>
             <div>
               <Movie />
@@ -49,13 +55,7 @@ function App() {
               <Video />
             </div>
             <div>
-              <Fact />
-            </div>
-            <div>
               <DadJoke />
-            </div>
-            <div>
-              <Cocktail />
             </div>
             <div>
               <Giphy />
