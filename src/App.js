@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div class="jumbotron">
-          <div className="title"><h1 style={{ fontSize: "50px" }}>Evening Entertainment</h1>
+          <div className="title"><h1 style={{ fontSize: "60px" }}>Evening Entertainment</h1>
 
             <p style={{ fontSize: "20px", color: "orange" }}>
               A place for all your evening entertainment
@@ -32,7 +32,7 @@ function App() {
 
 
         <div id="slider">
-          <Sliderify slideDurationInSecs="250">
+          <Sliderify slideDurationInSecs="250" stopOnCurrent={true}>
             <div>
               <Party />
             </div>

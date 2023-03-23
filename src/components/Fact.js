@@ -1,32 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import './Fact.css'
-
-
-
-
+import axios from 'axios';
 
 const Fact = () => {
   const [fact, setFact] = useState('');
+  const [attempts, setAttempts] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('https://api.api-ninjas.com/v1/facts?limit=1', {
+      const requestURL = `https://api.api-ninjas.com/v1/facts?limit=1`;
+
+      const requestURLconfig = {
         headers: {
-          'X-Api-Key': '+HjQRWo/G88Py6vuvVWDeA==Soa7hk2iKIwOlJnt'
+          "X-Api-Key": "+HjQRWo/G88Py6vuvVWDeA==Soa7hk2iKIwOlJnt",
+        },
+      };
+
+      try {
+        const response = await axios(requestURL, requestURLconfig);
+        const fact = response["data"][0].fact;
+        setFact(fact);
+      } catch (error) {
+        console.error("Error fetching fact:", error);
+        if (attempts < 5) { // maximum number of attempts is 5
+          setAttempts(attempts + 1);
+          fetchData();
+        } else {
+          setFact("Sorry, could not fetch a fact.");
         }
-      });
-      const data = await response.json();
-      setFact(data[0].fact);
-      
+      }
     };
-    
 
     fetchData();
-  }, []);
+  }, [attempts]);
 
   return (
     <div>
-      <h2 className='fact-title' >Fact of the day: </h2>
+      <h2 className='fact-title'>Fact of the day: </h2>
       <p style={{paddingTop: "5%"}} className='fact-details'>
         {fact}
       </p>
