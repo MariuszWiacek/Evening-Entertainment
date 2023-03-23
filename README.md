@@ -12,7 +12,9 @@
 
 ## DESCRIPTION
 
-Evening entertaiment for a user who needs some free time back from work, relaxing and finding ideas to spend the night in the best ways. This app gives you everything you need every day and onclick you can manage your evening...
+Evening entertaiment for a user who needs some free time back from work, relaxing and finding ideas to spend the night in the best ways. 
+
+This app gives you everything you need every day and onclick you can manage your evening...
 
 
 ## TECHNOLOGIES USED
@@ -28,10 +30,11 @@ HTML / CSS / JavaScript / REACT / node.js
 
 ## 3rd Party APIs used in deployed application:
 
-1. IMDB API: https://developer.nps.gov/api/v1/
+1. IMDB API: https://developer.imdb.com/
 2. NINJAS API https://api-ninjas.com/
 3. SKIDDLE API https://www.skiddle.com/api/
 4. GIPHY API https://developers.giphy.com/
+5. MEALDB API https://www.themealdb.com/api.php
 
 ## EXECUTING PROGRAM
 
