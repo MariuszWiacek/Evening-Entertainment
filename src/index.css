@@ -15,7 +15,6 @@ code {
 #slider {
   animation: showTitle 3.5s ease-in-out forwards;
   opacity: 0;
-  height: "500px";
   width: 100%;
   height: max-content;
   align-items: center;
@@ -68,13 +67,16 @@ button {
 
   }
 
-  
+  body{
+    height:auto;
+  }
+
 
   #slider {
     width: 100% !important;
-    margin: 0% !important;
+    margin: 2% !important;
     padding: 0% !important;
-    height: 500px !important;
+    height:fit-content ;
   }
 
   .image1 {
@@ -83,32 +85,10 @@ button {
 
  
   .movieDescription {
-    font-size: 30px !important;
+   
     padding: 10px;
   }
-
-  .navIcon.navIconNextBefore::before {
-    position: relative !important;
-    border-width: 40px !important;
-    border-top: 15px !important;
-    border-right: 10px !important;
-    border-image: url(./Images/nav-arrow.png) !important;
-    z-index: 99999 !important;
-  
-  
-  }
-  
-  .navIcon.navIconPrevBefore::before {
-    border-width: 20px !important;
-    border-top: 10px !important;
-    border-right: 10px !important;
-    border-image: url(./Images/nav-arrow.png) !important;
-    z-index: 99999 !important;
-    transform: scaleX(-1) !important;
-    border-image-outset: 10px !important;
-  
-  }
-
+ 
  
 
 }

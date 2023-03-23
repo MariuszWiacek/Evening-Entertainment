@@ -63,6 +63,7 @@ const Movie = () => {
             width: '330px',
             height: '480px',
             paddingRight: '2%',
+            paddingLeft : '2px',
             transition: 'transform 1s',
             cursor: 'pointer',
           }}
@@ -79,7 +80,7 @@ const Movie = () => {
           <h2 style={{ color: 'orange', textAlign: 'center', padding: '0px' }}>
             <strong>{movieData.title}</strong>
           </h2>
-          <p style={{ fontSize: '20px', textAlign: 'left' }}>
+          <p style={{ fontSize: '20px', textAlign: 'left', maxHeight: '400px', overflowY: 'scroll', overflow: 'auto' }}>
             <em>{movieData.overview}</em>
           </p>
           <p style={{ fontSize: '20px', textAlign: 'left' }}>

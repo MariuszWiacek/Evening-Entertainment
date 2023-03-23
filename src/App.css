@@ -104,7 +104,7 @@ button {
 }
 
 .navIcon.navIconPrevBefore::before {
-  border-width: 60px !important;
+  border-width: 50px !important;
   border-top: 30px !important;
   border-right: 20px !important;
   border-image: url(./Images/nav-arrow.png) !important;
@@ -129,25 +129,6 @@ button {
     transform: rotate(360deg);
   }
 
-  .navIcon.navIconNextBefore::before {
-    position: relative !important;
-    border-width: 80px !important;
-    border-top: 30px !important;
-    border-right: 20px !important;
-    border-image: url(./Images/nav-arrow.png) !important;
-    z-index: 99999 !important;
-  
-  
-  }
-  
-  .navIcon.navIconPrevBefore::before {
-    border-width: 80px !important;
-    border-top: 30px !important;
-    border-right: 20px !important;
-    border-image: url(./Images/nav-arrow.png) !important;
-    z-index: 99999 !important;
-    transform: scaleX(-1) !important;
-    border-image-outset: 20px !important;
-  
-  }
+
 }
+

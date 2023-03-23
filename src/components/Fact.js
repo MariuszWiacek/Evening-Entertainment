@@ -26,8 +26,8 @@ const Fact = () => {
 
   return (
     <div>
-      <h2 className='fact-title'>Fact of the day: </h2>
-      <p className='fact-details'>
+      <h2 className='fact-title' >Fact of the day: </h2>
+      <p style={{paddingTop: "5%"}} className='fact-details'>
         {fact}
       </p>
     </div>

@@ -1,10 +1,9 @@
-
-body{
+body {
   background-image: url(https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg);
   background-size: cover;
   text-align: center;
   font-family: 'Libre Baskerville', serif;
-  
+
 }
 
 
@@ -14,13 +13,14 @@ body{
 
 
 .intro-container {
-  height: 50vh; /*centering*/
+  height: 50vh;
+  /*centering*/
   /*centering*/
   display: flex;
   align-items: center;
   margin-left: 15%;
   margin-right: 15%;
-  
+
 }
 
 .typing {
@@ -30,9 +30,9 @@ body{
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
- 
-  
-  
+
+
+
 }
 
 @keyframes typing {
@@ -40,7 +40,7 @@ body{
     width: 0
   }
 }
-    
+
 @keyframes blink {
   50% {
     border-color: transparent
@@ -52,22 +52,38 @@ body{
     opacity: 0;
     transform: translateY(-10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.small { display: none; }
+
+.small {
+  display: none;
+}
 
 
 
 
 @media (max-width: 600px) {
   body {
-    background-size:cover;
-    
+
+    background-repeat: no-repeat;
+    background-position: 100%;
+
   }
-  .small { display: inline-block; }
-  .big { display: none; }
-  
+
+  .small {
+    display: inline-block;
+  }
+
+  .big {
+    display: none;
+  }
+
+  .intro-container {
+    height: 100vh;
+    margin-left: 5%;
+  }
 }

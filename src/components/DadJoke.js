@@ -32,7 +32,7 @@ function DadJoke() {
   return (
     <div>
       <h2 className='joke-title'>Dad's joke for the evening:</h2>
-      <p className='joke-details'>{joke}</p>
+      <p style={{paddingTop: "5%"}} className='joke-details'>{joke}</p>
       
      
       <p></p>
