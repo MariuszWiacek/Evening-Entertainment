@@ -64,11 +64,12 @@ const Movie = () => {
             borderRadius: '10px', // round the corners of the border
             boxShadow: '0 0 10px #ccc', // add a shadow to the border
             width: '330px',
-            height: '480px',
+            maxHeight: '480px',
             marginRight: '2%',
             marginLeft : '2%',
             transition: 'transform 1s',
             cursor: 'pointer',
+            
           }}
           src={`https://image.tmdb.org/t/p/w500/${movieData.poster_path}`}
           alt={movieData.title}

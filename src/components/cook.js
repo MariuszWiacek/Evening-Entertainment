@@ -35,47 +35,49 @@ const MealDB = () => {
     fetchData();
   };
 
-  return (
-    <div>
-      <h2>Get some tasty recipe :</h2>
-      <div class="moviediv" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-        <img
-          className="image1"
-          style={{
-            border: '2px solid #ccc',
-            borderRadius: '10px',
-            boxShadow: '0 0 10px #ccc',
-            width: '430px',
-            height: '430px',
-            marginRight: '2%',
-            marginLeft : '2%',
-            transition: 'transform 1s',
-            cursor: 'pointer',
-          }}
-          src={mealData.strMealThumb}
-          alt={mealData.strMeal}
-          onMouseOver={(e) => {
-            e.currentTarget.style.transform = 'scale(1.1)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        />
-        <div class="movieDescription">
-          <h2 style={{ color: 'orange', textAlign: 'center', padding: '0px' }}>
-            <strong>{mealData.strMeal}</strong>
-          </h2>
-          <p style={{ fontSize: '18px', textAlign: 'left', maxHeight: '400px', overflowY: 'scroll', overflow: 'auto' }}>
-            <em>{mealData.strInstructions}</em>
-          </p>
-          <p style={{ color: 'orange', fontSize: '18px', textAlign: 'left' }}>
-            <em>Cusine : {mealData.strArea}</em>
-          </p>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <button onClick={handleRefreshClick}>Next</button>
-          </div>
+  return (<div><h2>Get some tasty recipe:</h2>
+  <h2 style={{ color: 'orange', textAlign: 'center', padding: '0px' }}>
+      <strong>{mealData.strMeal}</strong>
+    </h2>
+    <div className='mealContainer' style={{ display: 'flex', flexDirection: 'row' }}>
+      
+      <div style={{ width: '40%', padding: '0px' }}>
+        
+        <div style={{ alignItems: 'center' }}>
+          
         </div>
+        <div className='imageDiv' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <img
+            src={mealData.strMealThumb}
+            alt={mealData.strMeal}
+            onMouseOver={(e) => {
+              e.currentTarget.style.transform = 'scale(1.1)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.transform = 'scale(1)';
+            }}
+            style={{
+              border: '2px solid #ccc',
+              borderRadius: '10px',
+              boxShadow: '0 0 10px #ccc',
+              width: '80%',
+              height: 'auto',
+              transition: 'transform 1s',
+              cursor: 'pointer',
+            }}
+          />
+          <button onClick={handleRefreshClick}>Next</button>
+        </div>
+      </div >
+      <div className='descriptionDiv' style={{ width: '60%', padding: '0px' }}>
+        <p style={{ fontSize: '18px', textAlign: 'left', maxHeight: '430px', overflowY: 'scroll', overflow: 'auto' }}>
+          <em>{mealData.strInstructions}</em>
+        </p>
+        <p style={{ color: 'orange', fontSize: '18px', textAlign: 'left' }}>
+          <em>Cuisine: {mealData.strArea}</em>
+        </p>
       </div>
+    </div>
     </div>
   );
 };

@@ -35,6 +35,7 @@ function Party() {
   return (
     <div>
       <h2>Fancy a party in London ? </h2>
+      <div><h2 style={{ color: 'orange' }}><strong>{event.eventname}</strong></h2></div>
       <img class="image1"
         style={{
           border: '2px solid #ccc', 
@@ -58,7 +59,7 @@ function Party() {
         src={event.largeimageurl} alt={event.eventname} />
 
 
-      <h2 style={{ color: 'orange' }}><strong>{event.eventname}</strong></h2>
+      
       <p>{event.date}</p>
       <p><em>{event.description}</em></p>
       <p>{event.venue.name}, {event.venue.town}, {event.venue.postcode}</p>

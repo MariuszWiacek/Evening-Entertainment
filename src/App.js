@@ -31,8 +31,8 @@ function App() {
         </div>
 
 
-        <div id="slider">
-          <Sliderify slideDurationInSecs="250" stopOnCurrent={true}>
+        <div id="slider" style={{height: '700px', width:'1200px'}}>
+          <Sliderify  slideDurationInSecs="250" stopOnCurrent={true}>
             <div>
               <Party />
             </div>
