@@ -87,64 +87,35 @@ button {
 
   }
 
-  /* body{
-    height:auto;
-  } */
-
 
   #slider {
-    width: 100% !important;
+    width: 90% !important;
     margin: 2% !important;
     padding: 0% !important;
     height:fit-content ;
     
   }
 
-  /* .imageDiv {
-    
-    width: 100%;
-  } */
 
- .cardDiv {
-  display: flex;
- flex-direction: column;
- }
+ 
 
-  .movieDescription {
-   width: 100%;
-    padding: 10px;
-  }
+  
   
     .mealContainer {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 20px;
+      width: 100%;
+      display: flex  !important;
+      flex-direction: row !important;
       
     }
   
-    .cardDiv {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      width: 100%;
-      max-width: 350px;
-      margin-top: 20px;
-      
-    }
   
     .imageDiv {
       width: 100%;
+  
       margin-bottom: 20px;
     }
   
-    .image1 {
-      width: 100%;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ccc;
-      cursor: pointer;
-    }
+   
   
     .descriptionDiv {
       width: 100% !important;
@@ -158,16 +129,41 @@ button {
       
     }
   
-    button {
-      margin-top: 20px;
-      background-color: #ff6600;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      font-size: 18px;
-      cursor: pointer;
+   
+
+    .title
+    {
+      margin-left: 5% !important;
+      margin-right: 5% !important;
+      border-bottom: 5px dashed blue !important;
     }
+ 
+   
+    h1 {
+      font-size: 42px !important;
+      letter-spacing: 0.1em;
+    }
+
+    p {
+      
+      font-size: 16px !important;
+    }
+
+    .subtitle {
+      
+      font-size: 16px !important;
+      letter-spacing: 0.1em;
+    }
+
+   
+    h2 {
+      font-size: 20px !important;
+    }
+.img {
+ width: 50% !important ;
+ height: 50% !important;
+}
+   
   }
   
  

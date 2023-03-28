@@ -54,23 +54,31 @@ const Movie = () => {
   }
 
   return (
-    <div>
-      <h2>What about a movie?</h2>
-      <div class="moviediv" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+    <div><h2 >What about a movie?</h2>
+      <h2 style={{ color: 'orange', textAlign: 'center', padding: '0px' }}>
+      <strong>{movieData.title}</strong>
+    </h2> <div className='mealContainer' style={{ display: 'flex', flexDirection: 'row' }}>
+      
+      <div style={{ width: '40%', padding: '0px' }}>
+        
+        <div style={{ alignItems: 'center' }}>
+          
+        </div>
+   
+      
+      <div class="imageDiv" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <img
-          className="image1"
-          style={{
-            border: '2px solid #ccc', // set border style, width and color
-            borderRadius: '10px', // round the corners of the border
-            boxShadow: '0 0 10px #ccc', // add a shadow to the border
-            width: '330px',
-            maxHeight: '480px',
-            marginRight: '2%',
-            marginLeft : '2%',
-            transition: 'transform 1s',
-            cursor: 'pointer',
+      
+            style={{
+              border: '2px solid #ccc',
+              borderRadius: '10px',
+              boxShadow: '0 0 10px #ccc',
+              width: '80%',
+              height: '80%',
+              transition: 'transform 1s',
+              cursor: 'pointer',
+            }}
             
-          }}
           src={`https://image.tmdb.org/t/p/w500/${movieData.poster_path}`}
           alt={movieData.title}
           onMouseOver={(e) => {
@@ -80,24 +88,22 @@ const Movie = () => {
             e.currentTarget.style.transform = 'scale(1)';
           }}
         />
-        <div class="movieDescription">
-          <h2 style={{ color: 'orange', textAlign: 'center', padding: '0px' }}>
-            <strong>{movieData.title}</strong>
-          </h2>
-          <p style={{ fontSize: '20px', textAlign: 'left', maxHeight: '400px', overflowY: 'scroll', overflow: 'auto' }}>
-            <em>{movieData.overview}</em>
-          </p>
-          <p style={{ fontSize: '20px', textAlign: 'left' }}>
-            <em>Rating : {movieData.vote_average}</em>
-          </p>
-          <p style={{ fontSize: '20px', textAlign: 'left' }}>
-            <em>Released : {movieData.release_date}</em>
-          </p>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <button onClick={handleRefreshClick}>Next</button>
+        <button onClick={handleRefreshClick}>Next</button>
           </div>
         </div>
-      </div>
+        <div className='descriptionDiv' style={{ width: '60%', padding: '0px' }}>
+          <p style={{ fontSize: '18px', textAlign: 'left', maxHeight: '430px', overflowY: 'scroll', overflow: 'auto' }}>
+            <em>{movieData.overview}</em>
+          </p>
+          <p style={{ fontSize: '18px', textAlign: 'left' }}>
+            <em>Rating : {movieData.vote_average}</em>
+          </p>
+          <p style={{ fontSize: '18px', textAlign: 'left' }}>
+            <em>Released : {movieData.release_date}</em>
+          </p>
+          
+    </div>
+    </div>
     </div>
   );
         }

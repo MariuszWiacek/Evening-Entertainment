@@ -47,7 +47,7 @@ const MealDB = () => {
           
         </div>
         <div className='imageDiv' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <img
+          <img 
             src={mealData.strMealThumb}
             alt={mealData.strMeal}
             onMouseOver={(e) => {

@@ -36,37 +36,48 @@ function Party() {
     <div>
       <h2>Fancy a party in London ? </h2>
       <div><h2 style={{ color: 'orange' }}><strong>{event.eventname}</strong></h2></div>
-      <img class="image1"
-        style={{
-          border: '2px solid #ccc', 
-          borderRadius: '10px', 
-          boxShadow: '0 0 10px #ccc', 
-          float: 'left',
-          width: '350px',
-          height: '400px',
-          marginRight: '2%',
-          marginLeft: '2%',
-          transition: 'transform 1s',
-          cursor: 'pointer',
-        }}
-        onMouseOver={(e) => {
-          e.currentTarget.style.transform = 'scale(1.1)'; /* add transform on hover */
-        }}
-        onMouseOut={(e) => {
-          e.currentTarget.style.transform = 'scale(1)'; /* reset transform on mouse out */
-        }}
+      <div className='mealContainer' style={{ display: 'flex', flexDirection: 'row' }}>
 
-        src={event.largeimageurl} alt={event.eventname} />
+        <div style={{ width: '40%', padding: '0px' }}>
+
+          <div style={{ alignItems: 'center' }}>
+
+          </div>
+          <div className='imageDiv' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <img
+              style={{
+                border: '2px solid #ccc',
+                borderRadius: '10px',
+                boxShadow: '0 0 10px #ccc',
+                width: '80%',
+                height: '80%',
+                transition: 'transform 1s',
+                cursor: 'pointer',
+              }}
+
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = 'scale(1.1)'; /* add transform on hover */
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = 'scale(1)'; /* reset transform on mouse out */
+              }}
+
+              src={event.largeimageurl} alt={event.eventname} />
+
+            <button onClick={fetchRandomEvent}>Next</button>
+          </div>
+        </div >
 
 
-      
-      <p>{event.date}</p>
-      <p><em>{event.description}</em></p>
-      <p>{event.venue.name}, {event.venue.town}, {event.venue.postcode}</p>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <button onClick={fetchRandomEvent}>Next</button>
+        <div className='descriptionDiv' style={{ width: '60%', padding: '0px' }}>
+          <p>{event.date}</p>
+          <p><em>{event.description}</em></p>
+          <p>{event.venue.name}, {event.venue.town}, {event.venue.postcode}</p>
+        </div>
       </div>
     </div>
+
+
   );
 }
 

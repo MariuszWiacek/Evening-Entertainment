@@ -21,9 +21,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div class="jumbotron">
-          <div className="title"><h1 style={{ fontSize: "60px" }}>Evening Entertainment</h1>
+          <div className="title"><h1 style={{ fontSize: "70px" }}>Evening Entertainment</h1>
 
-            <p style={{ fontSize: "20px", color: "orange" }}>
+            <p className="subtitle" style={{ fontSize: "20px", color: "orange", textShadow: 'none'}}>
               A place for all your evening entertainment
             </p>
 
