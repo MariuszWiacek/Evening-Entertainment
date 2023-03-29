@@ -92,13 +92,13 @@ button {
 }
 
 
-.navIcon.navIconNextBefore::before {
+/* .navIcon.navIconNextBefore::before {
   position: relative !important;
   border-width: 60px !important;
   border-top: 30px !important;
   border-right: 20px !important;
   border-image: url(./Images/nav-arrow.png) !important;
-  z-index: 99999 !important;
+  
   
 
 }
@@ -108,16 +108,17 @@ button {
   border-top: 30px !important;
   border-right: 20px !important;
   border-image: url(./Images/nav-arrow.png) !important;
-  z-index: 99999 !important;
+ 
   transform: scaleX(-1) !important;
   border-image-outset: 20px !important;
 
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+ 
 }
 
 @keyframes App-logo-spin {
@@ -128,7 +129,8 @@ button {
   to {
     transform: rotate(360deg);
   }
-
+  
+ 
 
 }
 
