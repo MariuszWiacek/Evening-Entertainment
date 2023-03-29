@@ -35,8 +35,8 @@ const Fact = () => {
 
   return (
     <div>
-      <h2 className='fact-title'>Fact of the day: </h2>
-      <p style={{ paddingTop: "5%" }} className='fact-details'>
+      <h2>Fact of the day: </h2>
+      <p style={{ paddingTop: "5%" }} >
         {fact}
       </p>
     </div>

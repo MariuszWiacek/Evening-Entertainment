@@ -40,6 +40,7 @@ const Movie = () => {
   useEffect(() => {
     fetchData();
   }, []);
+ 
 
   if (error) {
     return <div>Something went wrong: {error.message}</div>;
@@ -73,8 +74,8 @@ const Movie = () => {
               border: '2px solid #ccc',
               borderRadius: '10px',
               boxShadow: '0 0 10px #ccc',
-              width: '80%',
-              height: '80%',
+              width: '55%',
+              height: '55%',
               transition: 'transform 1s',
               cursor: 'pointer',
             }}
@@ -88,18 +89,19 @@ const Movie = () => {
             e.currentTarget.style.transform = 'scale(1)';
           }}
         />
-        <button onClick={handleRefreshClick}>Next</button>
+        <button className="button" onClick={handleRefreshClick}>Next</button>
           </div>
         </div>
         <div className='descriptionDiv' style={{ width: '60%', padding: '0px' }}>
           <p style={{ fontSize: '18px', textAlign: 'left', maxHeight: '430px', overflowY: 'scroll', overflow: 'auto' }}>
             <em>{movieData.overview}</em>
           </p>
-          <p style={{ fontSize: '18px', textAlign: 'left' }}>
+          <p style={{ color: '#36a3f5', fontSize: '18px', textAlign: 'left' }}>
             <em>Rating : {movieData.vote_average}</em>
           </p>
-          <p style={{ fontSize: '18px', textAlign: 'left' }}>
-            <em>Released : {movieData.release_date}</em>
+          <p style={{color: '#36a3f5', fontSize: '18px', textAlign: 'left' }}>
+  
+            <em >Released : {movieData.release_date}</em>
           </p>
           
     </div>

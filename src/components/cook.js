@@ -41,7 +41,7 @@ const MealDB = () => {
     </h2>
     <div className='mealContainer' style={{ display: 'flex', flexDirection: 'row' }}>
       
-      <div style={{ width: '40%', padding: '0px' }}>
+      <div style={{ width: '50%', padding: '0px' }}>
         
         <div style={{ alignItems: 'center' }}>
           
@@ -66,7 +66,7 @@ const MealDB = () => {
               cursor: 'pointer',
             }}
           />
-          <button onClick={handleRefreshClick}>Next</button>
+          <button className="button" onClick={handleRefreshClick}>Next</button>
         </div>
       </div >
       <div className='descriptionDiv' style={{ width: '60%', padding: '0px' }}>

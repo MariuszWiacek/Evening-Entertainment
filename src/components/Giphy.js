@@ -19,7 +19,7 @@ function Giphy() {
   return (
     <div>
       <h2>Funny Gif of the day</h2>
-      <Card className="card-giphy" style={{ width: "25rem" }}>
+      <Card className="card-giphy" style={{ maxHeight: "25rem", maxWidth: "25rem" }}>
         <Card.Img variant="top" src={gif} />
       </Card>
     </div>

@@ -64,7 +64,7 @@ function Party() {
 
               src={event.largeimageurl} alt={event.eventname} />
 
-            <button onClick={fetchRandomEvent}>Next</button>
+            <button className="button" onClick={fetchRandomEvent}>Next</button>
           </div>
         </div >
 

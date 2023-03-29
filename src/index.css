@@ -1,53 +1,50 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
 
 #slider {
   animation: showTitle 3.5s ease-in-out forwards;
   opacity: 0;
   width: 100%;
-  height:max-content;
+  height: max-content;
   align-items: center;
   /* border: 10px dashed rgb(47, 158, 192); */
   padding: 50px;
   /* margin-left: 200px;
   margin-right: 200px; */
   width: 80%;
- 
+
   max-height: '680px';
 
 
-  
- 
+
+
 
 
 }
 
 
 h2 {
-  
+
   padding-bottom: 3%;
   font-family: Georgia;
   /* Set the text color to white */
-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 
-/* Set the text stroke width and color */
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: rgba(0, 0, 0, 0.541);
-text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-  
-  
+  /* Set the text stroke width and color */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.541);
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+
+
 }
 
 h1 {
@@ -55,8 +52,8 @@ h1 {
 }
 
 p {
-  
-  font-family: Georgia;
+
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .ref-button {
@@ -66,22 +63,43 @@ p {
 
 }
 
-button {
+.button {
   font-family: Georgia;
   color: white;
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.801) !important;
+  font-size: 20px !important;
+
+
+
+}
+
+.button2 {
+  font-family: Georgia;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.479) !important;
+  font-size: 20px !important;
+
+
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
 
 }
 
 
-@media only screen and (max-width: 760px) {
+
+
+@media only screen and (max-width: 768px) {
 
   iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    
+
     padding: 0%;
     margin: 0%;
 
@@ -89,82 +107,88 @@ button {
 
 
   #slider {
-    width: 90% !important;
+    width: 100% !important;
     margin: 2% !important;
     padding: 0% !important;
-    height:fit-content ;
-    
+    height: fit-content;
+
   }
 
 
- 
 
-  
-  
-    .mealContainer {
-      width: 100%;
-      display: flex  !important;
-      flex-direction: row !important;
-      
-    }
-  
-  
-    .imageDiv {
-      width: 100%;
-  
-      margin-bottom: 20px;
-    }
-  
-   
-  
-    .descriptionDiv {
-      width: 100% !important;
-      height: fit-content;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      overflow-y:visible;
-      font-size: 1px;
-      
-    }
-  
-   
 
-    .title
-    {
-      margin-left: 5% !important;
-      margin-right: 5% !important;
-      border-bottom: 5px dashed blue !important;
-    }
- 
-   
-    h1 {
-      font-size: 42px !important;
-      letter-spacing: 0.1em;
-    }
 
-    p {
-      
-      font-size: 16px !important;
-    }
 
-    .subtitle {
-      
-      font-size: 16px !important;
-      letter-spacing: 0.1em;
-    }
+  .mealContainer {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
 
-   
-    h2 {
-      font-size: 20px !important;
-    }
-.img {
- width: 50% !important ;
- height: 50% !important;
+  }
+
+
+  .imageDiv {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+
+
+  .descriptionDiv {
+    width: 80% !important;
+    height: fit-content;
+    overflow-y: visible;
+    font-size: 1px;
+
+  }
+
+
+
+  .title {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    border-bottom: 5px dashed blue !important;
+  }
+
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: 0.1em;
+  }
+
+  p {
+    text-align: center;
+    font-size: 16px !important;
+  }
+
+  .subtitle {
+
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+  }
+
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
+
+  .button {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.8rem;
+    margin: 0 0.3rem;
+  }
+
+  .button-container {
+    display: inline;
+
+  }
+
 }
-   
-  }
-  
- 
-
