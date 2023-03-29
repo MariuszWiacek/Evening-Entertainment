@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 
+* {
+  box-sizing:unset !important;
+}
+
 .App {
   text-align: center;
 }
@@ -13,7 +17,6 @@
 
 
 .App-header {
-  background-image: url(https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -22,7 +25,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   animation: showTitle 1s ease-in-out forwards;
-  opacity: 0;
+  opacity: 1;
  
 }
 
@@ -36,7 +39,6 @@
 }
 
 .one-col {
-  background-image: url(https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg);
   font-family: 'Libre Baskerville', serif;
   margin: 5%;
   border: 20px;
@@ -45,7 +47,7 @@
   
   
   border-radius: 30px;
-  
+  opacity: 1;
 
 }
 

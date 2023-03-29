@@ -1,3 +1,7 @@
+* {
+  box-sizing:unset !important;
+}
+
 body {
   background-image: url(https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg);
   background-size: cover;
@@ -6,6 +10,21 @@ body {
   animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    
+
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: black !important;
+  opacity: 0.5 !important; /* Adjust the opacity to make the image darker or lighter */
+  box-sizing: content-box;
 
 }
 
@@ -82,6 +101,7 @@ body {
 
     background-repeat: no-repeat;
     background-position: 100%;
+    
 
   }
 

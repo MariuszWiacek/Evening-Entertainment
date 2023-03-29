@@ -1,13 +1,29 @@
+
+
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
+  box-sizing: content-box;
+ 
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 
 }
 
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: black !important;
+  opacity: 0.5 !important; /* Adjust the opacity to make the image darker or lighter */
+  box-sizing: content-box;
+
+}
 
 
 #slider {
@@ -68,8 +84,8 @@ p {
   color: white;
   background-color: rgba(255, 166, 0, 0.801) !important;
   font-size: 20px !important;
-
-
+  
+  
 
 }
 
@@ -78,15 +94,15 @@ p {
   color: white;
   background-color: rgba(0, 0, 255, 0.479) !important;
   font-size: 20px !important;
-
-
+  
+  
 
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-
+  
 }
 
 
@@ -138,6 +154,7 @@ p {
   .descriptionDiv {
     width: 80% !important;
     height: fit-content;
+
     overflow-y: visible;
     font-size: 1px;
 
@@ -158,7 +175,7 @@ p {
   }
 
   p {
-    text-align: center;
+text-align: center;
     font-size: 16px !important;
   }
 
@@ -188,7 +205,7 @@ p {
 
   .button-container {
     display: inline;
-
+    
   }
 
 }
