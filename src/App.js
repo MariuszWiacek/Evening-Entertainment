@@ -11,6 +11,7 @@ import { Sliderify } from "react-sliderify";
 import Party from "./components/party";
 import Video from "./components/video";
 import Cook from "./components/cook"
+import Swipeable from 'react-swipeable';
 
 // import Intro from "./components/intro";
 // import ReactDOM from "react-dom";
@@ -32,6 +33,7 @@ function App() {
 
 
         <div id="slider" style={{height: '700px', width:'1200px'}}>
+        <Swipeable onSwipedLeft={handleSwipeLeft} onSwipedRight={handleSwipeRight}>
           <Sliderify  slideDurationInSecs="250" stopOnCurrent={true}>
             <div>
               <Party />
@@ -64,6 +66,8 @@ function App() {
               <Email />
             </div>
           </Sliderify>
+          </Swipeable>
+
         </div>
 
 
