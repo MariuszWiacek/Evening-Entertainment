@@ -92,9 +92,9 @@ button {
 }
 
 
-/* .navIcon.navIconNextBefore::before {
+.navIcon.navIconNextBefore::before {
   position: relative !important;
-  border-width: 60px !important;
+  border-width: 40px !important;
   border-top: 30px !important;
   border-right: 20px !important;
   border-image: url(./Images/nav-arrow.png) !important;
@@ -104,7 +104,7 @@ button {
 }
 
 .navIcon.navIconPrevBefore::before {
-  border-width: 50px !important;
+  border-width: 40px !important;
   border-top: 30px !important;
   border-right: 20px !important;
   border-image: url(./Images/nav-arrow.png) !important;
@@ -112,7 +112,7 @@ button {
   transform: scaleX(-1) !important;
   border-image-outset: 20px !important;
 
-} */
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
