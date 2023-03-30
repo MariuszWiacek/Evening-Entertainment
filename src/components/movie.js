@@ -97,7 +97,7 @@ const Movie = () => {
             <em>{movieData.overview}</em>
           </p>
           <p style={{ color: '#36a3f5', fontSize: '18px', textAlign: 'left' }}>
-            <em>Rating : {movieData.vote_average}</em>
+            <em>Rating : {movieData.vote_average.toFixed(1)}</em>
           </p>
           <p style={{color: '#36a3f5', fontSize: '18px', textAlign: 'left' }}>
   
